@@ -3,6 +3,7 @@
 ## Overview
 
 The DeFi Lending Platform is a decentralized application (DApp) built using React that allows users to deposit, withdraw, borrow, and repay tokens on a lending platform. This application interacts with the Ethereum blockchain, specifically with a smart contract that manages lending operations.
+You can also find this app at https://simple-defilending.netlify.app . However, since it requires to connect to Ganache network, so it will not work. I am preparing to achieve it on Sepolia Testnet.
 
 ## Features
 

@@ -17,6 +17,10 @@ const DeFiLendingPlatform = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
+  if (!provider) {
+    console.log("!provider");
+  }
+
   const LENDING_PLATFORM_ADDRESS = "0x94f394Db5e958E296670BF494c723B6fab52d3fD"; // Ganache address
   const LENDING_TOKEN_ADDRESS = "0x36bFCebFfcAac1E6d6C2Dc39f2C7a2190359754B"; // Ganache address
 
@@ -25,6 +29,7 @@ const DeFiLendingPlatform = () => {
       if (typeof window.ethereum !== "undefined") {
         try {
           await window.ethereum.request({ method: "eth_requestAccounts" });
+
           const provider = new ethers.providers.Web3Provider(window.ethereum);
           const signer = provider.getSigner();
 

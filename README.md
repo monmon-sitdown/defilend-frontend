@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# DeFi Lending Platform - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The DeFi Lending Platform is a decentralized application (DApp) built using React that allows users to deposit, withdraw, borrow, and repay tokens on a lending platform. This application interacts with the Ethereum blockchain, specifically with a smart contract that manages lending operations.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Wallet Connection**: Connects to the user's Ethereum wallet using MetaMask.
+- **Token Management**: Displays user balances, deposits, and borrowings in real-time.
+- **Deposit and Withdraw**: Allows users to deposit tokens into the lending platform and withdraw them as needed.
+- **Borrow and Repay**: Users can borrow tokens based on their deposits and repay borrowed amounts.
+- **Interest Calculation**: Displays the total interest owed on borrowed amounts.
+- **Transaction Feedback** : Provides users with success and error messages for transactions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (version >= 14.x)
+- A web browser with MetaMask installed
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the Repository:
 
-### `npm run build`
+```
+git clone https://github.com/monmon-sitdown/defilend-frontend.git
+cd defilend-frontend
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install Dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Run the Application:
 
-### `npm run eject`
+```
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The application will open in your default web browser at http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Configuration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Make sure to replace the contract addresses in the code with the addresses of your deployed contracts:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+const LENDING_PLATFORM_ADDRESS = "0x94f394Db5e958E296670BF494c723B6fab52d3fD"; // Replace with your contract address
+const LENDING_TOKEN_ADDRESS = "0x36bFCebFfcAac1E6d6C2Dc39f2C7a2190359754B"; // Replace with your token address
+```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Connect Wallet**: Click on the "Connect" button to link your MetaMask wallet to the application.
+2. **View Balances**: Once connected, you can see your token balance, deposits, borrowings, and the interest owed.
+3. **Deposit Tokens**: Enter the amount of tokens you wish to deposit and click the "Deposit" button.
+4. **Withdraw Tokens**: Enter the amount you wish to withdraw and click the "Withdraw" button.
+5. **Borrow Tokens**: Enter the desired amount to borrow and click the "Borrow" button.
+6. **Repay Tokens**: Enter the repayment amount and click the "Repay" button.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Error Handling
 
-### Code Splitting
+The application provides feedback for successful and failed transactions. Users will see alerts on the screen indicating the result of their actions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technology Stack
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **React**: A JavaScript library for building user interfaces.
+- **Ethers.js**: A library for interacting with the Ethereum blockchain.
+- **OpenZeppelin**: Used for secure smart contract development.

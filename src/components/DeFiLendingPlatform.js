@@ -17,8 +17,8 @@ const DeFiLendingPlatform = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
-  const LENDING_PLATFORM_ADDRESS = "0x94f394Db5e958E296670BF494c723B6fab52d3fD"; // Replace with your deployed contract address
-  const LENDING_TOKEN_ADDRESS = "0x36bFCebFfcAac1E6d6C2Dc39f2C7a2190359754B"; // Replace with your deployed token address
+  const LENDING_PLATFORM_ADDRESS = "0x94f394Db5e958E296670BF494c723B6fab52d3fD"; // Ganache address
+  const LENDING_TOKEN_ADDRESS = "0x36bFCebFfcAac1E6d6C2Dc39f2C7a2190359754B"; // Ganache address
 
   useEffect(() => {
     const init = async () => {

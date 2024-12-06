@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ethers } from "ethers";
 
-// ABI imports (you'll need to generate these from your compiled contracts)
+// ABI imports (generated from compiled contracts)
 import LendingPlatformABI from "./abis/SimpleLendingPlatform.json";
 import ERC20ABI from "./abis/LendingToken.json";
 
